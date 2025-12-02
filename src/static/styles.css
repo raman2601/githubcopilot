@@ -161,6 +161,9 @@ footer {
 
 .participant-item {
   margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .participant-badge {
@@ -172,6 +175,24 @@ footer {
   border-radius: 999px;
   font-size: 0.9rem;
   box-shadow: 0 1px 0 rgba(13, 71, 161, 0.06);
+}
+
+.participant-delete {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #bf360c;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background-color: rgba(191,54,12,0.06);
+  transition: background-color 0.15s, transform 0.08s;
+}
+
+.participant-delete:hover {
+  background-color: rgba(191,54,12,0.12);
+  transform: translateY(-1px);
 }
 
 .no-participants {
